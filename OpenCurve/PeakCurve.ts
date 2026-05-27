@@ -3,8 +3,10 @@ export function SimplePeakCurve(peak: number) : number {
     return Math.pow(Math.E, (-8 * ( Math.pow(random - peak, 2))));
 }
 
-
-export default class PeakCurve {
+export default function CreatePeakCurve(min: number, max: number) : PeakCurve {
+    return new PeakCurve(max, min);
+}
+export class PeakCurve {
     max: number;
     min: number;
     constructor(max:number, min:number){
