@@ -1,4 +1,4 @@
-import OpenCurve from "./OpenCurve/PeakCurve.mts";
+import OpenCurve from "./PeakCurve.mts";
 
 let openCurve = OpenCurve(0,10);
 
